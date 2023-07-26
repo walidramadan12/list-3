@@ -7,14 +7,17 @@ document.title = "LogIn page"
 loginBtn.addEventListener("click",function(){
     let accessUser = usernameEl.value
     let accessPass = passwordEl.value
+    let found = false
     // console.log(accessUser)
     // console.log(accessPass)
-    for(let i=0;i<=accounts.length; i++){
+    for(let i in accounts){
         if(accessUser==accounts[i][0] && accessPass==accounts[i][1]){
-            console.log(`welcome ${accessUser}`)
-
+            alert(`welcome ${accessUser}`)
+            found = true
         }
 
     }
-
+    if(found==false){
+        alert("invalid username or password")
+    }
 })
