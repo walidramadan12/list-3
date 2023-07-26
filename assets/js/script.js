@@ -1,4 +1,4 @@
-
+const accounts=[["admin01","123"],["admin02","234"],["admin03","345"]]
 const loginBtn = document.getElementById("login")
 const usernameEl = document.getElementById("username")
 const passwordEl = document.getElementById("password")
@@ -9,8 +9,12 @@ loginBtn.addEventListener("click",function(){
     let accessPass = passwordEl.value
     // console.log(accessUser)
     // console.log(accessPass)
-    if(accessUser=="admin01" && accessPass==123){
+    for(let i=0;i<=accounts.length; i++){
+        if(accessUser==accounts[i][0] && accessPass==accounts[i][1]){
+            console.log(`welcome ${accessUser}`)
 
-    }else if(accessUser=="admin02" && accessPass==234)
+        }
+
+    }
 
 })
