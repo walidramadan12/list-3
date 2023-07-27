@@ -14,6 +14,7 @@ loginBtn.addEventListener("click",function(){
         if(accessUser==accounts[i][0] && accessPass==accounts[i][1]){
             alert(`welcome ${accessUser}`)
             found = true
+            document.write(`<h1 style="text-align:center;color:blue;margin-top:50px" >welcome <span style="font-weight:bold;color:red"> ${accessUser.toUpperCase()} </span></h1>`)
         }
 
     }
