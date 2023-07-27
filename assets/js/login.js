@@ -26,6 +26,11 @@ const fighters = [
   
   let stageEl = document.getElementById("stage")
   let fightButtonEl = document.getElementById("fightButton")
+  let logOutBtn = document.getElementById("logOut")
+  document.title=("Emoji")
+  logOutBtn.addEventListener("click",function(){
+    window.location.replace("index.html")
+  })
   fightButtonEl.addEventListener("click",function(){
   
     let char01 =  Math.floor(Math.random(fighters)*fighters.length)
